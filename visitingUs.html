@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiting us</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/visitingUS.css">
+</head>
+<body>
+
+    <div class="header-header"></div>
+    <div class="navbar"></div>
+    <div class="post-nav"></div>
+
+    <div class="doctor-container">
+        <div class="sidenav">
+            <h6><a href="#">Visiting Us</a> > <a href="#">Campus Map</a></h6>
+            <ul>
+                <li><a href="visitingUs.html">VISITNG US</a></li>
+                <li><a href="#">DIRECTIONS AND TRANSPORTATION</a></li>
+                <li><a href="visitingUs.html">CAMPUS MAP</a></li>
+                <li><a href="#">VISITING HOURS</a></li>
+                <li><a href="#">PATIENT GUIDE</a></li>
+                <li><a href="#">PATIENT INFORMATION</a></li>
+                <li><a href="#">HOTELS</a></li>
+                <li><a href="#">ACCESSIBILITY</a></li>
+                <li><a href="#">DINING</a></li>
+                <li><a href="#">GIFT SHOP</a></li>
+                <li><a href="#">SPIRITUAL CARE</a></li>
+                <li><a href="#">SMOKING POLICY</a></li>
+            </ul>
+        </div>
+        <div class="main">
+
+            <div class="find-form">
+                <br>
+                <div class="form-find-search">
+                    <i class="fa fa-search" style="font-size: 1.8em;"></i>
+                    <input class="fa fa-search" type="text" class="findTerm" placeholder="Search by Name">
+                </div>     
+                <br>
+                <div class="select-form">
+                <select name="speciality" id="select-option">
+                    <option value="Type of Speciality">Speciality</option>
+                    <option value="Speciality One">Speciality One</option>
+                    <option value="Speciality Two">Speciality Two</option>
+                    <option value="Speciality Three">Speciality Three</option>
+                </select>
+                <br><br>
+                <select name="program" id="select-option">
+                    <option value="opt">Program/Services</option>
+                    <option value="opt">Program/Services One</option>
+                    <option value="opt">Program/Services Two</option>
+                    <option value="opt">Program/Services Three</option>
+                </select>
+                <br><br>
+                <select name="building" id="select-option">
+                    <option value="building">Building</option>
+                    <option value="building One">Building One</option>
+                    <option value="building Two">Building Two</option>
+                    <option value="building Three">Building Three</option>
+                </select>
+               
+            </div>
+
+            <br><br>
+            <div class="form-search">
+                <input type="text" class="searchTerm" placeholder="Search by Name">
+                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+            </div>     
+            <br>
+            <button id="location">FIND LOCATION</button>
+        </div>
+
+        <!--Google map-->
+        <div class="map-container" id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+
+            <div class="map-sidebar">
+              <br>
+                <h5>Show Nearby</h5><br>
+                <label class="container">Parking
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Banking/ATMs
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Food/Dinning
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Gift Shops
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Hotel
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Convenience Stores
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Pharmacy
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Information Desks
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                 
+            </div> 
+            <span class="more"><i class="fa fa-chevron-circle-left"></i></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.3763043134722!2d-71.07531978504032!3d42.33449984470883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a3ff51e2b8d%3A0x6c794b9a44271191!2sBoston%20Medical%20Center!5e0!3m2!1sen!2s!4v1582732044326!5m2!1sen!2s"
+             width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>        </div>
+  
+        <!--Google Maps-->
+     </div>
+    </div>
+
+    <div class="footer-footer"></div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".header-header").load("header.html");
+            $(".navbar").load("navbar.html");
+            $(".post-nav").load("postNavbar.html");
+            $(".footer-footer").load("footer.html");
+        });
+   </script>
+   <script src="visitingUs.js"></script>
+</body>
+</html>

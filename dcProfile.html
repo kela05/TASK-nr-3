@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctor profile</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/dcProfile.css">
+</head>
+<body>
+
+    <div class="header-header"></div>
+    <div class="navbar"></div>
+    <div class="post-nav"></div>
+
+    <div class="doctor-container">
+        <div class="sidenav">
+            <h6><a href="#">Patient Care</a> > <a href="#">Oncology</a> > <a href="#"> The Team</a> > <a href="#">Profile</a></h6>
+            <ul>
+                <li><a href="oncology.html">ONCOLOGY</a></li>
+                <li><a href="thoracicOncology.html">OVERVIEW</a></li>
+                <li><a href="#">CONDITIONS TREATED</a></li>
+                <li><a href="#">DIAGNOSTICS</a></li>
+                <li><a href="#">TREATMENTS</a></li>
+                <li><a href="dcProfile.html">THE TEAM</a></li>
+                <li><a href="#">PATIENT INFO</a></li>
+                <li><a href="#">RESEARCH</a></li>
+                <li><a href="#">EDUCATION</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="doctor-profile">
+                <div class="doctor-info">
+                    <h1>Charlotte A Wu, MD</h1><br>
+                    <h6>Medical Director, Medicine General Internal Medicine</h6>
+                    <br><br>
+                    <h4>LANGUAGE: Chinse (Mandarin), Taiwanese</h4>
+                    <h4>GENDER: Female</h4>
+                </div>
+                <div class="doctor-img">
+                    <img src="images/profile.pic" alt="">
+                </div>
+            </div>
+            <br><br>
+            <hr>
+            <br>
+            <div class="profile">
+                <div class="doctor-cv">
+                    <address>
+                        <h2>ADDRESS</h2><br>
+                        725 Abany St, Suite 6C
+                        Boston, MA 02118
+                        Phone: (617) 414-5951
+                        Fax: (617) 414-9201
+                    </address>
+                    <ul>
+                    <li><a href="#"><i class="fa fa-calendar-check-o"></i> </a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> </a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> </a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i> </a></li></ul>
+                </div>
+                <br><hr><br>
+                <div class="residency">
+                    <h2>RESIDENCY</h2><br>
+                    Beth Israel Deaconess Medical Center Boston MA (2010)
+                </div>
+                <br><hr><br>
+                <div class="education">
+                    <h2>EDUCATION</h2><br>
+                    Yale University School of Medicine, New Haven CT (2007)
+                </div>
+                <br><hr><br>
+                <div class="certification">
+                    <h2>BOARD CERTIFICATION</h2><br>
+                    Internal Medicine
+                </div>
+                <br><hr><br>
+                <div class="expertise">
+                    <h2>CLINICAL EXPERTISE</h2><br>
+                    <li>1. Lorem Ipsum</li>
+                    <li>2. Lorem Ipsum</li>
+                    <li>3. Lorem Ipsum</li>
+                    <li>4. Lorem Ipsum</li>
+                </div>
+                <br><hr><br>
+                <div class="research">
+                    <h2>RESEARCH INTERESTS</h2><br>
+                    <li>1. Lorem Ipsum</li>
+                    <li>2. Lorem Ipsum</li>
+                    <li>3. Lorem Ipsum</li>
+                    <li>4. Lorem Ipsum</li>
+                </div>
+                <br><hr><br>
+                <div class="conducts">
+                    <h2>CONDUCTS CLINICAL TRIALS</h2><br>
+                    <li>Yes</li>
+                    <li><a href="#">Clinical Trial 1</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer-footer"></div>
+
+        <script src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(function(){
+                $(".header-header").load("header.html");
+                $(".navbar").load("navbar.html");
+                $(".post-nav").load("postNavbar.html");
+                $(".footer-footer").load("footer.html");
+            });
+       </script>
+</body>
+</html>

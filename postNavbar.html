@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post navbar</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    
+    .select-option ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        padding: 20px 180px;
+        height: 60px;
+        background: #fff;
+        filter: drop-shadow(0 3px 3px rgb(238, 233, 233));
+    }
+    .select-option ul li:nth-child(1) {
+        color: #65675b;
+    }
+    .select-option ul li:nth-child(2) {
+        color: #e1582a;;
+    } 
+    .select-option ul li:nth-child(3) {
+        color: #00837b;
+    }
+
+</style>
+<body>
+
+        <div class="select-option">
+            <ul>
+                <li><a href="#"><i class="fa fa-question-circle" style="font-size: 2em;"></i> How can we help you?</a></li>
+                <li><a href="#"><i class="fa fa-user-md" style="font-size: 2em;"></i></i> Find a Doctor</a></li>
+                <li><a href="#"><i class="fa fa-calendar-check-o" style="font-size: 2em;"></i></i> Make an appointment</a></li>
+            </ul>
+        </div>
+</body>
+</html>

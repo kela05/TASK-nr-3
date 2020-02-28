@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+    <div class="navbar" >
+        <div class="nav-menu">
+            <ul>
+                <li id="logo"><a href="main.html"><img src="images/logo_white.png"></a></li>
+                <li class=dropdown><a href="#" class="dropdown-toggle">PATIENT<br>CARE</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">CONDITIONS WE TREAT</a></li>
+                        <li><a href="#">PRIMARY CARE</a></li>
+                        <li><a href="specialityCare.html">SPECIALITY CARE</a></li>
+                    </ul>
+                </li>
+                <li class=dropdown><a href="#" class="dropdown-toggle">PROGRAMS <br> & SERVICES</a> 
+                    <ul class="dropdown-menu">
+                        <li><a href="#">PROGRAMS FOR ADULTS</a></li>
+                        <li><a href="#">PROGRAMS FOR CHILDREN</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                    </ul>
+                </li>
+                <li class=dropdown><a href="#" class="dropdown-toggle">VISITING <br> US</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ACCESSIBILITY INFORMATION</a></li>
+                        <li><a href="visitingUs.html">CAMPUS MAP</a></li>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">DIRECTIONS & TRANSPORTATION</a></li>
+                        <li><a href="#">GIFT SHOP</a></li>
+                        <li><a href="#">HOTELS</a></li>
+                        <li><a href="#">PATIENT GUIDE</a></li>
+                        <li><a href="#">PATIENT INFORMATION</a></li>
+                        <li><a href="#">SMOKING POLICY</a></li>
+                        <li><a href="#">SPIRITUAL CARE</a></li>
+                        <li><a href="#">VISITING OURS</a></li>
+                    </ul>
+                </li>
+                <li class=dropdown><a href="#" class="dropdown-toggle">ABOUT <br> US</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">MISSION, VISION, VALUES</a></li>
+                        <li><a href="#">EXECUTIVE LEADERSHIP</a></li>
+                        <li><a href="#">BMC NEWS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">AWARDS</a></li>
+                        <li><a href="#">GIVING TO BMC</a></li>
+                        <li><a href="#">CAMPUS REDESIGN</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">VOLUNTEER</a></li>
+                        <li><a href="#">AFFILIATES</a></li>
+                        <li><a href="#">COMMITMENT TO COMMUNITY</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="navbar.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            // Show hide popover
+            $(".dropdown").click(function(){
+                $(this).find(".dropdown-menu").slideToggle("fast");
+            });
+        });
+        $(document).on("click", function(event){
+            var $trigger = $(".dropdown");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".dropdown-menu").slideUp("fast");
+            }            
+        });
+    </script> -->
+</body>
+</html>
