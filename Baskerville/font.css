@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'BaskervilleMTStd-SemiBdIt';
+	src: url('BaskervilleMTStd-SemiBdIt.eot');
+	src: url('BaskervilleMTStd-SemiBdIt.eot?#iefix') format('embedded-opentype'),
+		url('BaskervilleMTStd-SemiBdIt.otf')  format('opentype'),
+		url('BaskervilleMTStd-SemiBdIt.woff2') format('woff2'),
+		url('BaskervilleMTStd-SemiBdIt.woff') format('woff'),
+		url('BaskervilleMTStd-SemiBdIt.ttf') format('truetype'),
+		url('BaskervilleMTStd-SemiBdIt.svg#BaskervilleMTStd-SemiBdIt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

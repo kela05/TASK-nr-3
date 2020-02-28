@@ -1,0 +1,297 @@
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../avenir/Avenir-Black.otf);
+  }
+  @font-face {
+    font-family: AvenirMedium;
+    src: url(../Avenir/Avenir-Medium.otf)
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../avenir/Avenir-Roman.otf);
+  }
+
+body {
+    background: lightgrey;
+}
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    /* width: 90%; */
+    margin: auto;
+    background: #fff;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    line-height: 2em;
+    padding-right: 18px;
+    width: 18%;
+}
+.sidenav li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* .sidenav li:first-child {
+    background: #e1582a;
+}
+.sidenav li > a {
+    color: #fff;
+} */
+.sidenav li a:hover {
+    background: #ec9476;
+    color: #fff;
+}
+.sidenav li a {
+    padding: 11px;
+    border-bottom: 1px solid #0f8db4;
+    font-size: 16px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.sidenav h6 {
+    font-size: 12px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* --- find form---- */
+
+.find-form {
+    background: rgb(207, 205, 205);
+    width: 80%;
+}
+
+/* ---- search --- */
+
+.form-search {
+    width: 64%;
+    position: relative;
+    display: flex;
+    padding: 0 15px;
+    margin: auto;
+}
+.searchTerm {
+    width: 100%;
+    border: 2px solid #fff;
+    border-right: none;
+    padding: 5px 15px;
+    height: 44px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #0f8db4;
+    font-size: 11px;
+    font-family: 'AvenirRoman';
+}
+::placeholder {
+    color: #0f8db4;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'AvenirRoman';
+}
+.searchTerm:focus{
+    color: #00B4CC;
+}
+.searchButton {
+    width: 55px;
+    height: 44px;
+    border: 2px solid #fff;
+    border-left: none;
+    background: white;
+    text-align: center;
+    color: #c0c8ca;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* --browse by letter ---*/
+.browse-by-letter h5 {
+    text-align: start;
+    padding-left: 150px;
+    font-size: 16px;
+    color: #656666;
+    font-weight: bold;
+    font-family: 'AvenirRoman';
+}
+.letter-browser {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    font-size: 14px;
+    color: #a9b2b4;
+    font-weight: bold;
+    font-family: 'AvenirRoman';
+}
+
+.radio-group {
+    text-align: center;
+}
+input[type="radio"] {
+    visibility: hidden;
+}
+.radio {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    color:#656666;
+    position: relative;
+    padding-left: 3px;
+    margin: 0 20px;
+    color: #656666;
+}
+.radio span {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid #656666;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.radio span:after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #656666;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+legend {
+    margin-left: 150px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.select-form {
+    text-align: center;
+    padding: 20px 0;
+}
+#select-option {
+    padding: 7px 8px;
+    width: 60%;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'AvenirMedium';
+    background: #00837b;
+    color: white;
+    outline: none;
+}
+
+/* ---find doctor----*/
+
+.main {
+    width: 70%;
+    margin-top: 63px;
+    margin-left: 50px;
+}
+.info h2 {
+    font-size: 19px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.info p {
+    font-size: 15px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+.speciality-care h5 {
+    font-size: 16px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+.doctor-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.info-name {
+    width: 50%;
+    margin: 0 50px;
+}
+.info-name h3 {
+    font-size: 16px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+    padding-bottom: 10px;
+}
+.info-name p {
+    font-size: 14px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+.doctor-one .contact li {
+    padding: 5px 0;
+}
+.doctor-one .contact li:nth-child(1) {
+    color: #e1582a;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-one .contact li:nth-child(2) {
+    color: #00837b;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-one .contact li:nth-child(3) {
+    color: #65675b;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-one .contact li:nth-child(4) {
+    color: #471d52;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+
+.news {
+    background: #f0ecec;
+    margin-bottom: 30px;
+}
+.bmc-news {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+}
+.news h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'AvenirBlack';
+    color: #201544;
+    padding-top: 20px;
+}
+.bmc-news li {
+    list-style: none;
+}
+.bmc-news li {
+    font-size: 14px;
+    text-align: center;
+    width: 20%;
+    font-family: 'AvenirMedium';
+    color: #362c56;
+}

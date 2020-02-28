@@ -1,0 +1,142 @@
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../avenir/Avenir-Black.otf);
+  }
+  @font-face {
+    font-family: AvenirMedium;
+    src: url(../Avenir/Avenir-Medium.otf)
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../avenir/Avenir-Roman.otf);
+  }
+.doctor-container {
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    line-height: 2.5em;
+    padding-right: 18px;
+}
+.sidenav li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+}
+/* .sidenav li:first-child {
+    background: #e1582a;
+}
+.sidenav li > a {
+    color: #fff;
+} */
+.sidenav li a:hover {
+    background: #ec9476;
+    color: #fff;
+}
+.sidenav li a {
+    padding: 11px;
+    border-bottom: 1px solid #0f8db4;
+    font-size: 16px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.sidenav h6 {
+    font-size: 12px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* ---find doctor----*/
+
+.main {
+    width: 60%;
+    margin-top: 63px;
+    margin-left: 30px;
+}
+.info h2 {
+    font-size: 19px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.info p {
+    font-size: 15px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* ---specific doctor --- */
+
+.doctor-profile {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(253, 236, 221);
+    width: 80%;
+}
+.doctor-info {
+    padding: 30px;
+}
+.doctor-info h1 {
+    font-size: 24px;
+    font-family: 'AvenirBlack';
+    color: #0f8db4;
+}
+.doctor-info h6,
+.doctor-info h4 {
+    font-family: 'AvenirBlack';
+    color: #0f8db4;
+    font-size: 14px;
+}
+.doctor-cv {
+    display: flex;
+    justify-content: space-between;
+}
+.doctor-cv address {
+    width: 30%;
+    font-family: 'AvenirMedium';
+    color: #0f8db4;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.doctor-cv ul {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    font-size: 30px;
+}
+.doctor-cv li {
+    padding: 10px;
+}
+.doctor-cv li:nth-child(1){
+    color: #e1582a;
+}
+.doctor-cv li:nth-child(2){
+   color: #00837b;
+}
+.doctor-cv li:nth-child(3){
+    color: #65675b;
+}
+.doctor-cv li:nth-child(4){
+    color: #471d52;
+}
+.residency, .education, .certification, 
+.expertise, .research, .conducts {
+    font-family: 'AvenirMedium';
+    color: #0f8db4;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.profile h2 {
+    font-family: 'AvenirBlack';
+}
+.conducts a {
+    text-decoration: underline;
+}

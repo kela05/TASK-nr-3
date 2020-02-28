@@ -1,0 +1,174 @@
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../avenir/Avenir-Black.otf);
+  }
+  @font-face {
+    font-family: AvenirMedium;
+    src: url(../Avenir/Avenir-Medium.otf)
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../avenir/Avenir-Roman.otf);
+  }
+.doctor-container {
+    display: flex;
+    justify-content: center;
+}
+.doctor-container li {
+    list-style: none;
+}
+.doctor-container a {
+    text-decoration: none;
+}
+
+.sidenav {
+    line-height: 2.5em;
+    padding-right: 18px;
+}
+.sidenav li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+/* .sidenav li:first-child {
+    background: #e1582a;
+}
+.sidenav li > a {
+    color: #fff;
+} */
+.sidenav li a:hover {
+    background: #ec9476;
+    color: #fff;
+}
+.sidenav li a {
+    padding: 11px;
+    border-bottom: 1px solid #0f8db4;
+    font-size: 16px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.sidenav h6 {
+    font-size: 12px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* ---find doctor----*/
+
+.main {
+    width: 60%;
+    margin-top: 63px;
+}
+.info h2 {
+    font-size: 19px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.info p {
+    font-size: 15px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* ---specific doctor --- */
+
+.specific-doctor {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(253, 236, 221);
+}
+.doctor-info {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.doctor-info h1 {
+    font-size: 24px;
+    font-family: 'AvenirBlack';
+    color: #0f8db4;
+}
+.doctor-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+.doctor-contact li {
+    padding: 5px 0;
+}
+.doctor-contact li:nth-child(1) {
+    color: #e1582a;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-contact li:nth-child(2) {
+    color: #00837b;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-contact li:nth-child(3) {
+    color: #65675b;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-contact li:nth-child(4) {
+    color: #471d52;
+    font-size: 16px;
+    font-family: AvenirMedium;
+}
+.doctor-info button {
+    margin: 20px 0;
+    padding: 8px 38px; 
+    border: 1px solid #471d52; 
+    background: #471d52;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-family: AvenirMedium;
+    outline: none;
+}
+
+.thoracic-oncology {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #3859b3;
+    font-family: AvenirBlack;
+    font-size: 14px; 
+}
+.thoracic-oncology ul {
+    padding-left: 50px;
+}
+.thoracic-oncology li {
+    list-style: circle;
+}
+
+
+.news {
+    background: #f0ecec;
+    margin-bottom: 30px;
+}
+.bmc-news {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+}
+.news h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'AvenirBlack';
+    color: #201544;
+    padding-top: 20px;
+}
+.bmc-news li {
+    list-style: none;
+}
+.bmc-news li {
+    font-size: 14px;
+    text-align: center;
+    width: 20%;
+    font-family: 'AvenirMedium';
+    color: #362c56;
+}

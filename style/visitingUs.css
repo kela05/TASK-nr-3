@@ -1,0 +1,281 @@
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../avenir/Avenir-Black.otf);
+  }
+  @font-face {
+    font-family: AvenirMedium;
+    src: url(../Avenir/Avenir-Medium.otf)
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../avenir/Avenir-Roman.otf);
+  }
+.doctor-container {
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    line-height: 2.5em;
+    padding-right: 18px;
+    width: 20%;
+}
+.sidenav li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* .sidenav li:first-child {
+    background: #e1582a;
+}
+.sidenav li > a {
+    color: #fff;
+} */
+.sidenav li a:hover {
+    background: #ec9476;
+    color: #fff;
+}
+.sidenav li a {
+    padding: 11px;
+    border-bottom: 1px solid #0f8db4;
+    font-size: 16px;
+    font-family: AvenirBlack;
+    color: #0f8db4;
+}
+.sidenav h6 {
+    font-size: 12px;
+    font-family: AvenirMedium;
+    color: #0f8db4;
+}
+
+/* --- find form---- */
+
+.find-form {
+    background: rgb(207, 205, 205);
+    width: 80%;
+    
+}
+.select-form {
+    text-align: center;
+    padding: 20px 0;
+}
+#select-option {
+    padding: 7px 8px;
+    width: 70%;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'AvenirMedium';
+    background: #00837b;
+    color: white;
+    outline: none;
+}
+
+
+/* where are you going */
+.main {
+    width: 60%;
+    margin-top: 63px;
+    margin-left: 50px;
+}
+
+
+.form-find-search {
+    width: 103%;
+    background: grey;
+    color: #fff;
+    margin-left: -10px;
+    padding: 20px 20px;
+}
+.form-find-search i {
+    color: #fff;
+    padding-left: 30px; 
+    padding-right: 20px;
+}
+.form-find-search input {
+    background: grey;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+}
+.form-find-search ::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "AvenirRoman";
+}
+.form-find-search .findTerm{
+    width: 100%;
+    border: 2px solid #fff;
+    border-right: none;
+    padding: 5px 15px;
+    height: 44px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'AvenirRoman';
+    background: grey;
+}
+
+/* ---- search --- */
+.form-search {
+    width: 74%;
+    position: relative;
+    display: flex;
+    padding: 0 15px;
+    margin: auto;
+    
+}
+.form-search input {
+    color: rgb(37, 26, 5);;
+}
+.form-search .searchTerm {
+    width: 100%;
+    border: 2px solid rgb(37, 26, 5);
+    border-right: none;
+    padding: 5px 15px;
+    height: 44px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'AvenirRoman';
+}
+.main .searchTerm {
+    background: rgb(207, 205, 205);
+}
+
+.form-search ::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'AvenirRoman';
+    color: rgb(37, 26, 5);
+}
+.searchTerm:focus{
+    color: rgb(37, 26, 5);
+}
+.searchButton {
+    width: 55px;
+    height: 44px;
+    border: 2px solid rgb(37, 26, 5);
+    border-left: none;
+    background: rgb(207, 205, 205);
+    text-align: center;
+    color: rgb(37, 26, 5);
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#location {
+    margin: 20px 0;
+    margin-left: 350px;
+    padding: 8px 38px; 
+    border: 1px solid #471d52; 
+    background: #471d52;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-family: AvenirMedium;
+    outline: none;
+}
+
+
+
+.map-container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.map-container {
+    display: flex;
+}
+.map-sidebar {
+    background: rgb(227, 233, 235);
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'AvenirMedium';
+    color: #00837b;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .map-sidebar .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(227, 233, 235);
+    border: 1px solid #00837b;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .map-sidebar .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid #00837b;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.map-container .more {
+    background: rgb(227, 233, 235);
+    padding: 0 8px; 
+    color:#00837b;
+}
+.map-container .more i {
+    position: relative;
+    top: 90%;
+    bottom: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}

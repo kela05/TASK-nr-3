@@ -1,0 +1,62 @@
+
+@font-face {
+  font-family: AvenirHeavy;
+  src: url(../Avenir/Avenir-Heavy.otf);
+}
+@font-face {
+    font-family: AvenirMedium;
+    src: url(../Avenir/Avenir-Medium.otf)
+}
+.footer {
+    background: #e5e5e5;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.footer-contact {
+    width: 15%;
+}
+.footer-contact p, 
+.footer-info li {
+    font-family: 'AvenirMedium';
+    font-size: 14px;
+}
+.footer-contact address,
+.footer-info h4 {
+    font-family: 'AvenirHeavy';
+    font-size: 16px;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+.footer-options {
+    width: 15%;
+}
+.footer-options li {
+    font-family: 'AvenirHeavy';
+    font-size: 16.03px;
+    line-height: 3.5em;
+}
+.footer li {
+    list-style: none;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer-end {
+    background: #e5e5e5;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'AvenirMedium';
+    font-size: 15px;
+}
